@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Portfolio Wijdan ABDERRAHMANI</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
@@ -21,27 +21,58 @@
     <header class="text-white py-4">
         <div class="navbar bg-base-300 rounded-box">
             <div class="flex-1 px-2 lg:flex-none">
-              <a class="text-lg font-bold">PORTFOLIO</a>
+              <a class="text-lg font-bold">PORTFOLIO WIJDAN ABDERRAHMANI</a>
             </div> 
             <div class="flex justify-end flex-1 px-2">
               <div class="flex items-stretch">
-                <a class="btn btn-ghost rounded-btn">Accueil</a>
-                <a class="btn btn-ghost rounded-btn">Expérience</a>
-                <a class="btn btn-ghost rounded-btn">Diplôme</a>
-                <a class="btn btn-ghost rounded-btn">Connaissance</a>
-                <a class="btn btn-ghost rounded-btn">Hobbies</a>
+                <a href="index.html" class="btn btn-ghost rounded-btn">Accueil</a>
+                <a href="experience.html" class="btn btn-ghost rounded-btn">Expérience</a>
+                <a href="diplome.html" class="btn btn-ghost rounded-btn">Diplôme</a>
+                <a href="connaissance.html" class="btn btn-ghost rounded-btn">Connaissance</a>
+                <a href="hobbies.html" class="btn btn-ghost rounded-btn">Hobbies</a>                
                 <div class="dropdown dropdown-end">
                   <label tabindex="0" class="btn btn-ghost rounded-btn">Projets</label>
                   <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-                    <li><a>Projet Twitch</a></li>
-                    <li><a>Connaissance</a></li> 
+                    <li><a href="twitch.html">Projet Twitch</a></li>
+                    <li><a href="wedgedigital.html">Stage Wedge Digital</a></li> 
+                    <li><a href="agriware.html">Alternance Agriware</a></li>
+                    <li><a href="societegenerale.html">Alternance Société Générale</a></li>  
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </header>
-    
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="img1.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="img2.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="img3.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="img4.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
     <main class="container mx-auto py-8">
         <div class="flex flex-col w-full lg:flex-row">
             <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div> 
